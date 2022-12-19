@@ -33,11 +33,22 @@ ul,
 p,
 h1,
 h2,
-h3,
+
 h4,
 h5,
 h6{
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h3{
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: var(--navy-blue);
     padding: 0;
     margin: 0;
 }
@@ -100,13 +111,14 @@ button{
     justify-content: center;
     align-items: center;
 
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
+    margin-bottom: 72px;
 
    
 }
 .filters-item{
     margin-right: 24px;
-    margin-bottom: 72px;
+   
    
 }
 .filters-item:last-child{
@@ -140,7 +152,7 @@ button{
 
 .header-logo{
     font-family: Raleway,sans-serif ;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.33;
     text-decoration: none;
     color: var(--navy-blue);
@@ -356,7 +368,9 @@ button{
     padding-bottom: 32px;
     padding-left: 16px;
 
-    border: 0.5px solid #F4F4FD;
+    border-bottom: 0.5px solid #F4F4FD;
+    border-right: 0.5px solid #F4F4FD;
+    border-left: 0.5px solid #F4F4FD;
 }
 .our-mission-item{
     font-weight: 700;
@@ -365,11 +379,14 @@ button{
     letter-spacing: 0.02em;
 
     
-    padding-right: auto;
+    /* padding-right: auto; */
     
 
     
     
+}
+.card-name{
+    margin-bottom: 8px;
 }
 .card-text{
     
@@ -384,7 +401,7 @@ button{
     border-radius: 0px 0px 4px 4px;
 
     flex-direction: column;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    
 }
 .team-content{
     padding-top: 32px;
@@ -416,7 +433,7 @@ button{
     margin-right: -24px;
     margin-bottom: -48px;
 
-    padding-bottom: 120px;
+   
 }
 .project-cards a{
     text-decoration: none;
@@ -424,7 +441,7 @@ button{
 }
 .pro-card-item{
     
-    flex-basis: calc(100% / 3 - 48px);
+    flex-basis: calc(100% - 48px ) / 3;
 
     margin-right: 24px;
     margin-bottom: 48px;
@@ -457,6 +474,7 @@ footer{
     display: block;
     
     padding-bottom: 100px;
+    margin-top: 120px;
    
     
 
